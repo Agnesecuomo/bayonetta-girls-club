@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Personaggi decorativi - Bayonetta Girls Club</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: "Times New Roman", serif;
+      color: #bb2eee;
+      margin: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-decoration: underline;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      text-decoration: underline;
+      color: #bb2eee;
+      margin: 10px 0 5px 0;
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      font-size: 15px;
+      margin: 4px 0;
+    }
+
+    a {
+      color: #bb2eee;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      background-color: yellow;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
+      border: 2px solid #202020;
+      padding: 20px;
+      background-color: rgb(253, 242, 252);
+      position: relative;
+      z-index: 1;
+    }
+
+    .decoration {
+      position: absolute;
+      z-index: 0;
+      opacity: 1;
+      pointer-events: none;
+      animation: float 4s ease-in-out infinite;
+      filter: contrast(130%) saturate(140%);
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0px); }
+      50%  { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="content" id="mainBox">
+    <h1>
+      <a href="index.html" style="display: inline-block; text-decoration: none;"
+         onmouseover="this.style.backgroundColor='yellow';"
+         onmouseout="this.style.backgroundColor='transparent';">
+        <img src="https://text.glitter-graphics.net/s/p.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/e.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/r.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/s.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/n.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/a.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/g.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/g.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/i.gif" border="0">
+         &nbsp;
+          &nbsp;
+        <img src="https://text.glitter-graphics.net/s/d.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/e.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/c.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/r.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/a.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/t.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/i.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/v.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/i.gif" border="0">
+      </a>
+    </h1>
+
+    <ul>
+      <li><span class="section-title"><a href="premiovisivo.html">Premio visivo</a></span></li>
+      <li><span class="section-title"><a href="prostituzione.html">Prostituzione</a></span></li>
+    </ul>
+
+    <p><a href="archivio.html">Torna all'archivio</a></p>
+  </div>
+
+  <script>
+    const images = [
+      'img/deco_sito1.gif','img/deco_sito2.gif','img/deco_sito3.gif','img/deco_sito4.gif',
+      'img/deco_sito5.gif','img/deco_sito6.gif','img/deco_sito7.gif','img/deco_sito8.gif',
+      'img/deco_sito9.gif','img/deco_sito10.jpg','img/deco_sito11.jpg','img/deco_sito12.gif',
+      'img/deco_sito13.gif','img/deco_sito14.gif','img/deco_sito15.jpg','img/deco_sito16.jpg',
+      'img/deco_sito17.jpg','img/deco_sito18.gif','img/deco_sito19.jpg','img/deco_sito20.png'
+    ];
+
+    const numImages = 20;
+    const usedPositions = [];
+    const spacing = 180;
+    const maxTries = 100;
+
+    const contentBox = document.getElementById('mainBox').getBoundingClientRect();
+
+    function isFarEnough(x, y, size) {
+      const buffer = 10;
+      if (
+        x + size > contentBox.left - buffer &&
+        x < contentBox.right + buffer &&
+        y + size > contentBox.top - buffer &&
+        y < contentBox.bottom + buffer
+      ) {
+        return false;
+      }
+
+      for (const pos of usedPositions) {
+        const dx = pos.x - x;
+        const dy = pos.y - y;
+        if (Math.sqrt(dx * dx + dy * dy) < spacing) return false;
+      }
+
+      return true;
+    }
+
+    for (let i = 0; i < numImages; i++) {
+      let tries = 0;
+      let x = 0, y = 0, size = 0;
+      do {
+        size = 100 + Math.random() * 80;
+        const padding = 20;
+        const maxX = window.innerWidth - size - padding;
+        const maxY = window.innerHeight - size - padding;
+        x = padding + Math.random() * maxX;
+        y = padding + Math.random() * maxY;
+        tries++;
+      } while (!isFarEnough(x, y, size) && tries < maxTries);
+
+      if (tries === maxTries) continue;
+
+      const img = document.createElement('img');
+      img.src = images[Math.floor(Math.random() * images.length)];
+      img.className = 'decoration';
+      img.style.width = `${size}px`;
+      img.style.top = `${y}px`;
+      img.style.left = `${x}px`;
+      img.style.animationDelay = `${Math.random() * 5}s`;
+
+      document.body.appendChild(img);
+      usedPositions.push({ x, y });
+    }
+  </script>
+</body>
+</html>

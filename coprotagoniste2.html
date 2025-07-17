@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Co-protagoniste 2 - Bayonetta Girls Club</title>
+  <style>
+    .games-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .game-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      background-color: #fff0fa;
+      padding: 15px;
+      border: 1px solid #bb2eee;
+      border-radius: 0px;
+    }
+
+    .game-text {
+      flex: 2;
+    }
+
+    .game-img {
+      flex: 1;
+      text-align: right;
+    }
+
+    .game-img img {
+      max-width: 140px;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    body {
+      background-color: #ffffff;
+      font-family: "Times New Roman", serif;
+      color: #bb2eee;
+      margin: 40px;
+      position: relative;
+      overflow-y: scroll;
+      cursor: url('img/pink-cursor.cur'), auto;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      background-color: yellow;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
+      border: 2px solid #202020;
+      padding: 40px;
+      background-color: rgb(253, 242, 252);
+      position: relative;
+      z-index: 1;
+      min-height: 80vh;
+    }
+
+    .decoration {
+      position: absolute;
+      z-index: 0;
+      opacity: 0.9;
+      pointer-events: none;
+      animation: float 4s ease-in-out infinite;
+      filter: contrast(120%) saturate(130%) brightness(110%);
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0px); }
+      50%  { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+
+    a img { filter: contrast(120%) saturate(130%); }
+  </style>
+</head>
+<body>
+  <div class="content" id="mainBox">
+    <h1>
+      <a href="archivio.html" style="display:inline-block;text-decoration:none;"
+         onmouseover="this.style.backgroundColor='yellow';"
+         onmouseout="this.style.backgroundColor='transparent';">
+        <img src="https://text.glitter-graphics.net/s/c.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+         &nbsp;
+        <img src="https://text.glitter-graphics.net/s/p.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/r.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/t.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/a.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/g.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/n.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/i.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/s.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/t.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/e.gif" border="0">
+      </a>
+    </h1>
+
+    <div class="games-list">
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>TimeSplitters 2 – Jo-Beth, Venus Starr (2002)</h2>
+          <p>Protagoniste carismatiche e irriverenti in uno sparatutto cult.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/timesplitters2.jpeg" alt="TimeSplitters 2">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Mortal Kombat: Tournament Edition – Sareena (2003)</h2>
+          <p>Combattente demoniaca, misteriosa e potente.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/sareena.jpeg" alt="Sareena">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Mortal Kombat: Deception – Kira (2004)</h2>
+          <p>Nuova recluta con personalità esplosiva nel mondo di MK.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/kira.jpeg" alt="Kira">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Soulcalibur III – Amy, Tira (2005)</h2>
+          <p>Due lottatrici dai background opposti e stili letali.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/soulcalibur3.jpeg" alt="Soulcalibur III">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>TimeSplitters: Future Perfect – Jo-Beth (2005)</h2>
+          <p>Ritorna Jo-Beth: gotica, punk e pronta all'azione.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/futureperfect.jpeg" alt="Future Perfect">
+        </div>
+        </div>
+        <div class="game-entry">
+        <div class="game-text">
+          <h2>Tekken 6 (2007)</h2>
+          <p>Zafina, misteriosa lottatrice con poteri mistici.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/zafina.jpeg" alt="Zafina">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Soulcalibur V – Shura, Pyrrha (2008)</h2>
+          <p>Due combattenti femminili dalle storie contrastanti.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/soulcaliburv.jpeg" alt="Soulcalibur V">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Ninja Gaiden Sigma 2 – Ayane, Momiji, Rachel (2009)</h2>
+          <p>Tre eroine ninja giocabili in combattimenti adrenalinici.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/ninjagaiden.jpeg" alt="Ninja Gaiden Sigma 2">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Dragon Age: Origins – Leliana (2009)</h2>
+          <p>Barda e spia, romantica e letale nel mondo fantasy di Thedas.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/leliana.jpeg" alt="Leliana">
+        </div>
+      </div>
+       <div class="game-entry">
+        <div class="game-text">
+          <h2>League of Legends (2009)</h2>
+          <p>Numerose campionesse rappresentano diversi archetipi femminili.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/lol.jpeg" alt="League of Legends">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Resident Evil 5 (2009)</h2>
+          <p>Sheva, partner armata e competente di Chris Redfield.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/sheva.jpg" alt="Sheva">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Enslaved: Odyssey to the West – Trip (2010)</h2>
+          <p>Partner fondamentale per l’avventura e l’ingegno tecnico.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/trip.jpg" alt="Trip">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Call of Duty: Black Ops II (Modalità Zombie) – Misty (2012)</h2>
+          <p>Unica combattente donna tra i sopravvissuti nell’apocalisse zombie.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/misty.jpeg" alt="Misty">
+        </div>
+      </div>
+    </div>
+
+    <p style="text-align: center; margin-top: 30px;">
+      <a href="coprotagoniste.html"> &larr; Pagina precedente</a> |
+      <a href="coprotagoniste3.html">Pagina successiva &rarr;</a>
+    </p>
+  </div>
+</body>
+</html>

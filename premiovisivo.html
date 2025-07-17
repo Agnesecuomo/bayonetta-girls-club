@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Premio Visivo - Bayonetta Girls Club</title>
+  <style>
+    .games-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .game-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      background-color: #fff0fa;
+      padding: 15px;
+      border: 1px solid #bb2eee;
+      border-radius: 0px;
+    }
+
+    .game-text {
+      flex: 2;
+    }
+
+    .game-img {
+      flex: 1;
+      text-align: right;
+    }
+
+    .game-img img {
+      max-width: 140px;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    body {
+      background-color: #ffffff;
+      font-family: "Times New Roman", serif;
+      color: #bb2eee;
+      margin: 40px;
+      position: relative;
+      overflow-y: scroll;
+      cursor: url('img/pink-cursor.cur'), auto;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      background-color: yellow;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
+      border: 2px solid #202020;
+      padding: 40px;
+      background-color: rgb(253, 242, 252);
+      position: relative;
+      z-index: 1;
+      min-height: 80vh;
+    }
+
+    .decoration {
+      position: absolute;
+      z-index: 0;
+      opacity: 0.9;
+      pointer-events: none;
+      animation: float 4s ease-in-out infinite;
+      filter: contrast(120%) saturate(130%) brightness(110%);
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0px); }
+      50%  { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+
+    a img { filter: contrast(120%) saturate(130%); }
+  </style>
+</head>
+<body>
+  <div class="content" id="mainBox">
+    <h1>
+      <a href="decorativi.html" style="display:inline-block;text-decoration:none;"
+         onmouseover="this.style.backgroundColor='yellow';"
+         onmouseout="this.style.backgroundColor='transparent';">
+        <img src="https://text.glitter-graphics.net/s/p.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/r.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/e.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/m.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/i.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+        &nbsp;
+        <img src="https://text.glitter-graphics.net/s/v.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/i.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/s.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/i.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/v.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+      </a>
+    </h1>
+
+    <p style="margin-bottom: 30px;">Incentivi al gioco, corpi offerti come premio, NPC.</p>
+
+    <div class="games-list">
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Out Run (1986)</h2>
+          <p>Ragazza accompagnatrici come incentivo</p>
+        </div>
+        <div class="game-img">
+          <img src="img/outrun.jpeg" alt="Out Run">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Cruis’n USA (1994)</h2>
+          <p>Premio visivo: ragazza trofeo</p>
+        </div>
+        <div class="game-img">
+          <img src="img/cruisnusa.jpeg" alt="Cruis’n USA">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Super Off Road (1989)</h2>
+          <p>Incentivi e ragazze premio</p>
+        </div>
+        <div class="game-img">
+          <img src="img/superoffroad.jpg" alt="Super Off Road">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Quest for Glory II (1990)</h2>
+          <p>Personaggi accattivanti durante il gioco</p>
+        </div>
+        <div class="game-img">
+          <img src="img/questforglory2.jpeg" alt="Quest for Glory II">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Sunset Riders (1991)</h2>
+          <p>Incentivi visivi durante il gioco</p>
+        </div>
+        <div class="game-img">
+          <img src="img/sunsetriders.jpeg" alt="Sunset Riders">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Eliminator Boat Duel (1991)</h2>
+          <p>Premio visivo e incentivi</p>
+        </div>
+        <div class="game-img">
+          <img src="img/eliminatorboat.jpeg" alt="Eliminator Boat Duel">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Lucky & Wild (1993)</h2>
+          <p>Incentivi durante il gioco</p>
+        </div>
+        <div class="game-img">
+          <img src="img/luckywild.jpeg" alt="Lucky & Wild">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Rave Racer (1995)</h2>
+          <p>Ragazze mascotte</p>
+        </div>
+        <div class="game-img">
+          <img src="img/raveracer.jpeg" alt="Rave Racer">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Bully (2006)</h2>
+          <p>Ragazze NPC, premi visivi e fisici</p>
+        </div>
+        <div class="game-img">
+          <img src="img/bully.jpeg" alt="Bully">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Ridge Racer 2 (2006)</h2>
+          <p>Reiko Nagase, mascotte</p>
+        </div>
+        <div class="game-img">
+          <img src="img/ridgeracer2.jpeg" alt="Ridge Racer 2">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Need for Speed: ProStreet (2006)</h2>
+          <p>Ragazze mascotte e incentivi</p>
+        </div>
+        <div class="game-img">
+          <img src="img/prostreet.jpeg" alt="Need for Speed: ProStreet">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>MX vs. ATV Alive (2011)</h2>
+          <p>Ragazze mascotte</p>
+        </div>
+        <div class="game-img">
+          <img src="img/mxvsatv.jpeg" alt="MX vs. ATV Alive">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>House Party (2017)</h2>
+          <p>Preestazioni sessuali come premio visivo ed incentivo</p>
+        </div>
+        <div class="game-img">
+          <img src="img/houseparty.jpeg" alt="House Party">
+        </div>
+      </div>
+    </div>
+
+    <p style="text-align: center; margin-top: 30px;">
+      <a href="decorativi.html">Torna alla sezione</a>
+    </p>
+  </div>
+</body>
+</html>

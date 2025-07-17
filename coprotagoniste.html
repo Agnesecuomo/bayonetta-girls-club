@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Co-protagoniste - Bayonetta Girls Club</title>
+  <style>
+    .games-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .game-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      background-color: #fff0fa;
+      padding: 15px;
+      border: 1px solid #bb2eee;
+      border-radius: 0px;
+    }
+
+    .game-text {
+      flex: 2;
+    }
+
+    .game-img {
+      flex: 1;
+      text-align: right;
+    }
+
+    .game-img img {
+      max-width: 140px;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    body {
+      background-color: #ffffff;
+      font-family: "Times New Roman", serif;
+      color: #bb2eee;
+      margin: 40px;
+      position: relative;
+      overflow-y: scroll;
+      cursor: url('img/pink-cursor.cur'), auto;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      background-color: yellow;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
+      border: 2px solid #202020;
+      padding: 40px;
+      background-color: rgb(253, 242, 252);
+      position: relative;
+      z-index: 1;
+      min-height: 80vh;
+    }
+
+    .decoration {
+      position: absolute;
+      z-index: 0;
+      opacity: 0.9;
+      pointer-events: none;
+      animation: float 4s ease-in-out infinite;
+      filter: contrast(120%) saturate(130%) brightness(110%);
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0px); }
+      50%  { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+
+    a img { filter: contrast(120%) saturate(130%); }
+  </style>
+</head>
+<body>
+  <div class="content" id="mainBox">
+    <h1>
+      <a href="archivio.html" style="display:inline-block;text-decoration:none;"
+         onmouseover="this.style.backgroundColor='yellow';"
+         onmouseout="this.style.backgroundColor='transparent';">
+        <img src="https://text.glitter-graphics.net/s/c.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+         &nbsp;
+        <img src="https://text.glitter-graphics.net/s/p.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/r.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/t.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/a.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/g.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/n.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/i.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/s.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/t.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/e.gif" border="0">
+      </a>
+    </h1>
+
+    <div class="games-list">
+      <div class="game-entry"><div class="game-text"><h2>Gauntlet – Valchyrie (1985)</h2><p>Co-protagonista selezionabile in un arcade fantasy cooperativo.</p></div><div class="game-img"><img src="img/gauntlet.jpg" alt="Gauntlet"></div></div>
+      <div class="game-entry"><div class="game-text"><h2>Street Fighter II – Chun-Li (1991)</h2><p>Prima donna in un picchiaduro, simbolo della forza femminile arcade.</p></div><div class="game-img"><img src="img/chunli.jpeg" alt="Chun-Li"></div></div>
+      <div class="game-entry"><div class="game-text"><h2>Mortal Kombat – Sonya Blade (1992)</h2><p>Agente speciale, prima combattente donna nella saga.</p></div><div class="game-img"><img src="img/sonya.jpg" alt="Sonya Blade"></div></div>
+      <div class="game-entry"><div class="game-text"><h2>Mortal Kombat II – Kitana e Mileena (1993)</h2><p>Due ninja letali con storie intrecciate tra rivalità e potere.</p></div><div class="game-img"><img src="img/kitana.jpeg" alt="Kitana e Mileena"></div></div>
+       <div class="game-entry">
+        <div class="game-text">
+          <h2>Super Street Fighter II: The New Challengers (1993)</h2>
+          <p>Cammy, combattente agile e popolare nella saga.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/cammy.jpg" alt="Cammy">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Tekken (1994)</h2>
+          <p>Anna e Julia Williams, lottatrici ricorrenti nella saga.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/tekken1994.jpg" alt="Tekken">
+        </div>
+      </div>
+
+      <div class="game-entry"><div class="game-text"><h2>Soul Blade – Taki, Sophitia (1995)</h2><p>Combattenti agili e forti in un picchiaduro 3D a tema fantasy.</p></div><div class="game-img"><img src="img/soulblade.jpeg" alt="Soul Blade"></div></div>
+      <div class="game-entry"><div class="game-text"><h2>Ultimate Mortal Kombat 3 – Jade, Sheeva, Sindel (1995)</h2><p>Varietà di archetipi femminili tra violenza, magia e forza bruta.</p></div><div class="game-img"><img src="img/umk3.jpeg" alt="UMK3 donne"></div></div>
+      <div class="game-entry"><div class="game-text"><h2>Mortal Kombat Trilogy – Khameleon (1996)</h2><p>Misteriosa ninja con poteri misti dai personaggi precedenti.</p></div><div class="game-img"><img src="img/khameleon.jpeg" alt="Khameleon"></div></div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Resident Evil (1996)</h2>
+          <p>Jill Valentine, eroina iconica e indipendente.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/jill.jpg" alt="Jill Valentine">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Street Fighter III: New Generation (1997)</h2>
+          <p>Elena, con uno stile di lotta acrobatico e ritmico.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/elena.jpeg" alt="Elena">
+        </div>
+      </div>
+         <div class="game-entry">
+        <div class="game-text">
+          <h2>Tekken 3 (1997)</h2>
+          <p>Julia Chang, giovane combattente nativa americana.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/juliachang.jpg" alt="Julia Chang">
+        </div>
+      </div>
+      <div class="game-entry"><div class="game-text"><h2>Soulcalibur – Ivy (1998)</h2><p>Dominatrice elegante con arma frusta, icona visiva del gioco.</p></div><div class="game-img"><img src="img/ivy.jpeg" alt="Ivy"></div></div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Street Fighter Alpha 3 (1998)</h2>
+          <p>Maki, Juli e Mika: nuove combattenti con stili unici.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/alpha3.jpeg" alt="Alpha 3">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Tekken 4 (2001)</h2>
+          <p>Christie Monteiro, ballerina brasiliana capoeirista.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/christie.jpeg" alt="Christie Monteiro">
+        </div>
+      </div>
+      <div class="game-entry"><div class="game-text"><h2>Mortal Kombat: Deadly Alliance – Li Mei, Nitara (2002)</h2><p>Nuove combattenti tra tradizione e innovazione visiva.</p></div><div class="game-img"><img src="img/deadly.jpeg" alt="Li Mei e Nitara"></div></div>
+      <div class="game-entry"><div class="game-text"><h2>Soulcalibur II – Cassandra, Seong Mi-Na, Xianghua (2002)</h2><p>Varietà di protagoniste tra armi differenti e stili di lotta.</p></div><div class="game-img"><img src="img/sc2.jpg" alt="Soulcalibur II"></div></div>
+    </div>
+
+    <p style="text-align: center; margin-top: 30px;">
+      <a href="archivio.html">Torna all'archivio</a> | 
+      <a href="coprotagoniste2.html"> Pagina successiva &rarr;</a>
+    </p>
+  </div>
+
+  <script>
+    const images = [
+      'img/deco_sito1.gif','img/deco_sito2.gif','img/deco_sito3.gif','img/deco_sito4.gif',
+      'img/deco_sito5.gif','img/deco_sito6.gif','img/deco_sito7.gif','img/deco_sito8.gif',
+      'img/deco_sito9.gif','img/deco_sito10.jpg','img/deco_sito11.jpg','img/deco_sito12.gif',
+      'img/deco_sito13.gif','img/deco_sito14.gif','img/deco_sito15.jpg','img/deco_sito16.jpg',
+      'img/deco_sito17.jpg','img/deco_sito18.gif','img/deco_sito19.jpg','img/deco_sito20.png',
+      'img/deco_sito21.jpg','img/deco_sito22.jpg','img/deco_sito23.gif','img/deco_sito24.jpg',
+      'img/deco_sito25.jpg','img/deco_sito26.png','img/deco_sito27.jpg','img/deco_sito28.png',
+      'img/deco_sito29.gif','img/deco_sito30.jpg','img/deco_sito31.gif','img/deco_sito32.gif',
+      'img/deco_sito33.gif','img/deco_sito34.gif','img/deco_sito35.gif','img/deco_sito36.gif'
+    ];
+
+    const numImages = 20;
+    const usedPositions = [];
+    const spacing = 160;
+    const maxTries = 100;
+    const contentBox = document.getElementById('mainBox').getBoundingClientRect();
+
+    function isFarEnough(x, y, size) {
+      const buffer = 10;
+      if (
+        x + size > contentBox.left - buffer &&
+        x < contentBox.right + buffer &&
+        y + size > contentBox.top - buffer &&
+        y < contentBox.bottom + buffer
+      ) return false;
+      for (const pos of usedPositions) {
+        const dx = pos.x - x;
+        const dy = pos.y - y;
+        if (Math.sqrt(dx*dx + dy*dy) < spacing) return false;
+      }
+      return true;
+    }
+
+    for (let i = 0; i < numImages; i++) {
+      let tries = 0, x = 0, y = 0, size = 0;
+      do {
+        size = 100 + Math.random() * 80;
+        const padding = 20;
+        const maxX = window.innerWidth - size - padding;
+        const maxY = window.innerHeight - size - padding;
+        x = padding + Math.random() * maxX;
+        y = padding + Math.random() * maxY;
+        tries++;
+      } while (!isFarEnough(x, y, size) && tries < maxTries);
+      if (tries === maxTries) continue;
+      const img = document.createElement('img');
+      img.src = images[i % images.length];
+      img.className = 'decoration';
+      img.style.width = `${size}px`;
+      img.style.left = `${x}px`;
+      img.style.top = `${y}px`;
+      img.style.position = 'absolute';
+      img.style.animationDelay = `${Math.random() * 5}s`;
+      document.body.appendChild(img);
+      usedPositions.push({ x, y });
+    }
+  </script>
+</body>
+</html>

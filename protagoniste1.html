@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Protagoniste - Bayonetta Girls Club</title>
+  <style>
+    .games-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .game-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      background-color: #fff0fa;
+      padding: 15px;
+      border: 1px solid #bb2eee;
+      border-radius: 0px;
+    }
+
+    .game-text {
+      flex: 2;
+    }
+
+    .game-img {
+      flex: 1;
+      text-align: right;
+    }
+
+    .game-img img {
+      max-width: 140px;
+      height: auto;
+      border: 2px solid #ccc;
+    }
+
+    body {
+      background-color: #ffffff;
+      font-family: "Times New Roman", serif;
+      color: #bb2eee;
+      margin: 40px;
+      position: relative;
+      overflow-y: scroll;
+      cursor: url('img/pink-cursor.cur'), auto;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      background-color: yellow;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
+      border: 2px solid #202020;
+      padding: 40px;
+      background-color: rgb(253, 242, 252);
+      position: relative;
+      z-index: 1;
+      min-height: 80vh;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      font-size: 15px;
+      margin: 6px 0;
+    }
+
+    .decoration {
+      position: absolute;
+      z-index: 0;
+      opacity: 0.9;
+      pointer-events: none;
+      animation: float 4s ease-in-out infinite;
+      filter: contrast(120%) saturate(130%) brightness(110%);
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0px); }
+      50%  { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+
+    a img { filter: contrast(120%) saturate(130%); }
+  </style>
+</head>
+<body>
+  <div class="content" id="mainBox">
+    <h1>
+      <a href="archivio.html" style="display:inline-block;text-decoration:none;"
+         onmouseover="this.style.backgroundColor='yellow';"
+         onmouseout="this.style.backgroundColor='transparent';">
+        <img src="https://text.glitter-graphics.net/s/p.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/r.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/t.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/a.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/g.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/n.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/i.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/s.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/t.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/e.gif" border="0">
+      </a>
+    </h1>
+
+    <!-- Lista giochi in layout con descrizione e immagine -->
+<div class="games-list">
+
+  <div class="game-entry">
+    <div class="game-text">
+      <h2>Tomb Raider – Lara Croft (1996)</h2>
+      <p>Iconica esploratrice e archeologa, tra le prime protagoniste femminili nei videogiochi mainstream. La sua immagine è stata però spesso ipersessualizzata.</p>
+    </div>
+    <div class="game-img">
+      <img src="img/lara.jpg" alt="Lara Croft">
+    </div>
+  </div>
+
+  <div class="game-entry">
+    <div class="game-text">
+      <h2>Drakan: Order of the Flames – Rynn (1999)</h2>
+      <p>Rynn è una guerriera che combatte fianco a fianco con un drago. Un personaggio forte ma inserito in una rappresentazione visiva stereotipata.</p>
+    </div>
+    <div class="game-img">
+      <img src="img/drakan.jpg" alt="Drakan">
+    </div>
+  </div>
+
+  <div class="game-entry">
+    <div class="game-text">
+      <h2>Metroid – Samus Aran (2002)</h2>
+      <p>Samus è una pioniera tra le protagoniste femminili: il suo genere è stato una sorpresa per molti, rivelato solo alla fine del gioco originale.</p>
+    </div>
+    <div class="game-img">
+      <img src="img/metroid.jpg" alt="Metroid">
+    </div>
+  </div>
+ 
+  <div class="game-entry">
+    <div class="game-text">
+      <h2>Kya: Dark Lineage – (2003)</h2>
+      <p> Kya rappresenta ll'archetipo della "reverse damsel in distress"</p>
+    </div>
+    <div class="game-img">
+      <img src="img/kya.jpg" alt="kya">
+    </div>
+  </div>
+
+   <div class="game-entry">
+    <div class="game-text">
+      <h2>Primal – Jennifer (2003)</h2>
+      <p> Jennifer rappresenta ll'archetipo della "reverse damsel in distress"</p>
+    </div>
+    <div class="game-img">
+      <img src="img/jennifer.jpg" alt="jennifer">
+    </div>
+  </div>
+
+   <div class="game-entry">
+    <div class="game-text">
+      <h2>Beyond good and evil – Jade (2003)</h2>
+      <p> Jade rappresenta ll'archetipo della "reverse damsel in distress"</p>
+    </div>
+    <div class="game-img">
+      <img src="img/jade.jpg" alt="jade">
+    </div>
+  </div>
+
+    <div class="game-entry">
+    <div class="game-text">
+      <h2>XBlades – Ayumi (2007)</h2>
+      <p> Protagonista</p>
+    </div>
+    <div class="game-img">
+      <img src="img/jade.jpg" alt="jade">
+    </div>
+  </div>
+
+  <!-- Puoi aggiungere altri giochi seguendo lo stesso schema -->
+
+<div class="game-entry">
+        <div class="game-text">
+          <h2>Heavenly Sword – Nariko (2007)</h2>
+          <p>Guerriera potente e tragica, protagonista di un action cinematografico con forte carica epica e visiva.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/heavenly.jpg" alt="Heavenly Sword">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Aquaria (2007)</h2>
+          <p>Gioco indie acclamato con protagonista femminile che incarna l'archetipo della "reverse damsel in distress".</p>
+        </div>
+        <div class="game-img">
+          <img src="img/aquaria.jpg" alt="Aquaria">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Golden Axe: Beast Rider (2008)</h2>
+          <p>Protagonista amazzone in un reboot del classico beat ‘em up, con estetica iper-mascolinizzata.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/goldenaxe.jpg" alt="Golden Axe">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Tomb Raider: Underworld (2008)</h2>
+          <p>Lara Croft torna con un design più realistico ma ancora con elementi di sessualizzazione.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/underworld.jpg" alt="Tomb Raider Underworld">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Wet (2009)</h2>
+          <p>Un'action game stilizzato con protagonista femminile dura e ironica, fortemente sessualizzata.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/wet.jpg" alt="Wet">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Bayonetta (2009)</h2>
+          <p>Strega potente e ipersessualizzata, simbolo di empowerment controverso e ambivalente.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/bayonetta.jpg" alt="Bayonetta">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Batman: Arkham City – Catwoman (2011)</h2>
+          <p>Anti-eroina agile e sexy, parte giocabile del titolo. Rappresentazione ambigua del potere femminile.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/catwoman.jpg" alt="Catwoman">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Pandora’s Tower (2011)</h2>
+          <p>La protagonista Elena subisce una trasformazione fisica: un simbolo potente e ambivalente di genere e corpo.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/pandora.jpg" alt="Pandora’s Tower">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Blades of Time (2012)</h2>
+          <p>Protagonista femminile in stile anime, fortemente erotizzata ma dotata di poteri speciali.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/blades.jpg" alt="Blades of Time">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Lollipop Chainsaw (2012)</h2>
+          <p>Cheerleader cacciatrice di zombie, satira della sessualizzazione ma anche esempio eclatante di essa.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/lollipop.jpg" alt="Lollipop Chainsaw">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Remember Me (2013)</h2>
+          <p>Protagonista femminile in un mondo cyberpunk, tra memoria, potere e ribellione.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/remember.jpg" alt="Remember Me">
+        </div>
+      </div>
+
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Nier: Automata (2013)</h2>
+          <p>2B è un androide combattente. Design erotizzato e forte riflessione su corpo, identità e obbedienza.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/nier.jpg" alt="Nier: Automata">
+        </div>
+      </div>
+      <script>
+        
+        
+  const games = [
+    {
+      title: "Tomb Raider – Lara Croft (1996)",
+      text: "Iconica esploratrice e archeologa, tra le prime protagoniste femminili nei videogiochi mainstream. La sua immagine è stata però spesso ipersessualizzata.",
+      img: "img/lara.jpg"
+    },
+    {
+      title: "Drakan: Order of the Flames – Rynn (1999)",
+      text: "Rynn è una guerriera che combatte fianco a fianco con un drago. Un personaggio forte ma inserito in una rappresentazione visiva stereotipata.",
+      img: "img/drakan.jpg"
+    },
+    {
+      title: "Metroid – Samus Aran (2002)",
+      text: "Samus è una pioniera tra le protagoniste femminili: il suo genere è stato una sorpresa per molti, rivelato solo alla fine del gioco originale.",
+      img: "img/metroid.jpeg"
+    },
+    {
+      title: "Kya: Dark Lineage – (2003)",
+      text: "Kya rappresenta l'archetipo della \"reverse damsel in distress\"",
+      img: "img/kya.jpg"
+    },
+    {
+      title: "Primal – Jennifer (2003)",
+      text: "Jennifer rappresenta l'archetipo della \"reverse damsel in distress\"",
+      img: "img/jennifer.jpg"
+    },
+    {
+      title: "Beyond Good and Evil – Jade (2003)",
+      text: "Jade rappresenta l'archetipo della \"reverse damsel in distress\"",
+      img: "img/jade.jpeg"
+    },
+    {
+      title: "XBlades – Ayumi (2007)",
+      text: "Protagonista",
+      img: "img/xblades.jpg"
+    },
+    {
+      title: "Heavenly Sword – Nariko (2007)",
+      text: "Protagonista combattiva in un mondo fantasy epico.",
+      img: "img/heavenlysword.jpeg"
+    },
+    {
+      title: "Aquaria (2007)",
+      text: "Protagonista in un'avventura subacquea: un esempio di 'reverse damsel in distress'.",
+      img: "img/aquaria.jpg"
+    },
+    {
+      title: "Golden Axe: Beast Rider (2008)",
+      text: "Remake del classico beat ‘em up, con una protagonista combattente.",
+      img: "img/beastrider.jpg"
+    },
+    {
+      title: "Wet (2009)",
+      text: "Azione in stile pulp, protagonista femminile armata e pericolosa.",
+      img: "img/wet.jpeg"
+    },
+    {
+      title: "Bayonetta (2009)",
+      text: "Strega guerriera super-stilizzata e iper-sessualizzata.",
+      img: "img/bayonetta.jpg"
+    },
+    {
+      title: "Batman: Arkham City – Catwoman (2011)",
+      text: "Catwoman giocabile in alcune sezioni del gioco.",
+      img: "img/catwoman.jpg"
+    },
+    {
+      title: "Blades of Time (2012)",
+      text: "Protagonista femminile armata in un action dinamico.",
+      img: "img/blades.jpg"
+    },
+    {
+      title: "Lollipop Chainsaw (2012)",
+      text: "Cheerleader armata di motosega: estetica iper-stilizzata e provocatoria.",
+      img: "img/lollipop.jpg"
+    },
+    {
+      title: "Remember Me (2013)",
+      text: "Nilin, protagonista in un futuro distopico, lotta contro un sistema di controllo mentale.",
+      img: "img/remember.jpg"
+    },
+    {
+      title: "Nier: Automata (2017)",
+      text: "Androidi femminili protagoniste in un mondo post-apocalittico.",
+      img: "img/nier.jpg"
+    }
+  ];
+
+  let currentPage = 1;
+  const itemsPerPage = 10;
+
+  function displayGames() {
+    const start = (currentPage - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    const pageGames = games.slice(start, end);
+
+    const gamesList = document.querySelector('.games-list');
+    gamesList.innerHTML = '';
+
+    pageGames.forEach(game => {
+      gamesList.innerHTML += `
+        <div class="game-entry">
+          <div class="game-text">
+            <h2>${game.title}</h2>
+            <p>${game.text}</p>
+          </div>
+          <div class="game-img">
+            <img src="${game.img}" alt="${game.title}">
+          </div>
+        </div>
+      `;
+    });
+
+    document.getElementById('pagination').innerHTML = `
+      ${currentPage > 1 ? '<button onclick="prevPage()">← Indietro</button>' : ''}
+      ${end < games.length ? '<button onclick="nextPage()">Avanti →</button>' : ''}
+    `;
+  }
+
+  function nextPage() {
+    if ((currentPage * itemsPerPage) < games.length) {
+      currentPage++;
+      displayGames();
+    }
+  }
+
+  function prevPage() {
+    if (currentPage > 1) {
+      currentPage--;
+      displayGames();
+    }
+  }
+
+  displayGames();
+</script>
+
+<div id="pagination" style="text-align:center; margin-top: 30px;"></div>
+
+
+    </div>
+      <p style="text-align: center; margin-top: 30px;">
+        <a href="archivio.html">Torna all'archivio</a> |
+      <a href="protagoniste2.html"> Pagina successiva &rarr;</a> 
+</p>
+</p>
+
+  </div>
+  
+
+
+ 
+  <script>
+    const images = [
+      'img/deco_sito1.gif','img/deco_sito2.gif','img/deco_sito3.gif','img/deco_sito4.gif',
+      'img/deco_sito5.gif','img/deco_sito6.gif','img/deco_sito7.gif','img/deco_sito8.gif',
+      'img/deco_sito9.gif','img/deco_sito10.jpg','img/deco_sito11.jpg','img/deco_sito12.gif',
+      'img/deco_sito13.gif','img/deco_sito14.gif','img/deco_sito15.jpg','img/deco_sito16.jpg',
+      'img/deco_sito17.jpg','img/deco_sito18.gif','img/deco_sito19.jpg','img/deco_sito20.png',
+      'img/deco_sito21.jpg','img/deco_sito22.jpg','img/deco_sito23.gif','img/deco_sito24.jpg',
+      'img/deco_sito25.jpg','img/deco_sito26.png','img/deco_sito27.jpg','img/deco_sito28.png',
+      'img/deco_sito29.gif','img/deco_sito30.jpg','img/deco_sito31.gif','img/deco_sito32.gif',
+      'img/deco_sito33.gif','img/deco_sito34.gif','img/deco_sito35.gif','img/deco_sito36.gif'
+    ];
+
+    const numImages = 20;
+    const usedPositions = [];
+    const spacing = 160;
+    const maxTries = 100;
+    const contentBox = document.getElementById('mainBox').getBoundingClientRect();
+
+    function isFarEnough(x, y, size) {
+      const buffer = 10;
+      if (
+        x + size > contentBox.left - buffer &&
+        x < contentBox.right + buffer &&
+        y + size > contentBox.top - buffer &&
+        y < contentBox.bottom + buffer
+      ) return false;
+      for (const pos of usedPositions) {
+        const dx = pos.x - x;
+        const dy = pos.y - y;
+        if (Math.sqrt(dx*dx + dy*dy) < spacing) return false;
+      }
+      return true;
+    }
+
+    for (let i = 0; i < numImages; i++) {
+      let tries = 0, x=0, y=0, size=0;
+      do {
+        size = 100 + Math.random()*80;
+        const padding = 20;
+        const maxX = window.innerWidth - size - padding;
+        const maxY = window.innerHeight - size - padding;
+        x = padding + Math.random()*maxX;
+        y = padding + Math.random()*maxY;
+        tries++;
+      } while(!isFarEnough(x,y,size)&&tries<maxTries);
+      if(tries===maxTries) continue;
+      const img = document.createElement('img');
+      img.src = images[i % images.length];
+      img.className = 'decoration';
+      img.style.width = `${size}px`;
+      img.style.left = `${x}px`;
+      img.style.top = `${y}px`;
+      img.style.animationDelay = `${Math.random()*5}s`;
+      document.body.appendChild(img);
+      usedPositions.push({x,y});
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Co-protagoniste 3 - Bayonetta Girls Club</title>
+  <style>
+    .games-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .game-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      background-color: #fff0fa;
+      padding: 15px;
+      border: 1px solid #bb2eee;
+      border-radius: 0px;
+    }
+
+    .game-text {
+      flex: 2;
+    }
+
+    .game-img {
+      flex: 1;
+      text-align: right;
+    }
+
+    .game-img img {
+      max-width: 140px;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    body {
+      background-color: #ffffff;
+      font-family: "Times New Roman", serif;
+      color: #bb2eee;
+      margin: 40px;
+      position: relative;
+      overflow-y: scroll;
+      cursor: url('img/pink-cursor.cur'), auto;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      background-color: yellow;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
+      border: 2px solid #202020;
+      padding: 40px;
+      background-color: rgb(253, 242, 252);
+      position: relative;
+      z-index: 1;
+      min-height: 80vh;
+    }
+
+    .decoration {
+      position: absolute;
+      z-index: 0;
+      opacity: 0.9;
+      pointer-events: none;
+      animation: float 4s ease-in-out infinite;
+      filter: contrast(120%) saturate(130%) brightness(110%);
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0px); }
+      50%  { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+
+    a img { filter: contrast(120%) saturate(130%); }
+  </style>
+</head>
+<body>
+  <div class="content" id="mainBox">
+    <h1>
+      <a href="archivio.html" style="display:inline-block;text-decoration:none;"
+         onmouseover="this.style.backgroundColor='yellow';"
+         onmouseout="this.style.backgroundColor='transparent';">
+        <img src="https://text.glitter-graphics.net/s/c.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+        &nbsp;
+        <img src="https://text.glitter-graphics.net/s/p.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/r.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/t.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/a.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/g.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/o.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/n.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/i.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/s.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/t.gif" border="0">
+        <img src="https://text.glitter-graphics.net/s/e.gif" border="0">
+      </a>
+    </h1>
+
+    <div class="games-list">
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Soulcalibur V – Leixia, Viola (2012)</h2>
+          <p>Nuove protagoniste nel quinto capitolo della saga di combattimento.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/sc5.jpeg" alt="Soulcalibur V">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Guacamelee – Tostada (2013)</h2>
+          <p>Personaggio co-protagonista giocabile in modalità cooperativa.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/guacamelee.jpeg" alt="Tostada">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>The Wonderful 101 – Wonder Pink (2013)</h2>
+          <p>Supereroina dallo stile glam in un gruppo multicolore di combattenti.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/wonderpink.jpeg" alt="Wonder Pink">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Mortal Kombat X – Tanya, Jacquie Briggs (2015)</h2>
+          <p>Nuove lottatrici in un capitolo rinnovato del celebre franchise.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/mkx.jpeg" alt="MKX">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Honkai Impact 3rd (2016)</h2>
+          <p>Gioco mobile con un cast di eroine combattenti in stile anime.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/honkai.jpg" alt="Honkai Impact">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Call of Duty: Black Ops 4 – Scarlett Rhodes (2018)</h2>
+          <p>Protagonista nella modalità zombie: determinata, coraggiosa e armata.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/scarlett.jpeg" alt="Scarlett Rhodes">
+        </div>
+      </div>
+      <div class="game-entry">
+        <div class="game-text">
+          <h2>Mortal Kombat 11 – Cetrion (2019)</h2>
+          <p>Divinità della natura e potente combattente nell'universo MK.</p>
+        </div>
+        <div class="game-img">
+          <img src="img/cetrion.jpeg" alt="Cetrion">
+        </div>
+      </div>
+    </div>
+
+    <p style="text-align: center; margin-top: 30px;">
+      <a href="coprotagoniste2.html">&larr; Pagina precedente</a> |
+      <a href="archivio.html">Torna all'archivio</a>
+    </p>
+  </div>
+</body>
+</html>
